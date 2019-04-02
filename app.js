@@ -1,62 +1,36 @@
-const form = document.getElementById('name-form');
+window.onload = init;
+
+function init() {
+  displayName();
+}
+
+const form = document.getElementById("name-form");
 form.onsubmit = function(event) {
   event.preventDefault();
-const result = document.getElementById('result');
-  result.innerHTML = 'Hi ' + form.fullName.value;(form.fullname.value);
+  const result = document.getElementById("result");
+  result.innerHTML = "Hi " + form.fullName.value;
+  form.fullname.value;
   this.reset();
-  };
+};
 
-  const resume = {
-    person: {
-      name: 'Paul Bennings',
-      email: 'paul@happnyc.com',
-      number: '702-913-4907',
-      social media: {
-        Instagram: 'www.instagram.com/heavyweight_nyc',
-        Facebook: 'www.facebook.com/heavyweight.nyc/'
-      }, 
-    experience: {
-      job1: {
-        nameofjob: '',
-        title: '',
-        lengtoftime: '',
-        description: {
-          achievements: ''
-        },
-    
-      job2: {
-        nameofjob: '',
-        title: '',
-        lengthoftime: '',
-        description: {
-          achievements: ''
-        },
-   }
-  },
-   projects: {
-      project1: '',
-        nameofproject: '',
-        link: '',
-        screenshot: '',
-        github: '',
-        achievements: ''
-},
-projects2: {
-  project1: '',
-    nameofproject: '',
-    link: '',
-    screenshot: '',
-    github: '',
-    achievements: ''
-},   
-projects3: {
-  project1: '',
-    nameofproject: '',
-    link: '',
-    screenshot: '',
-    github: '',
-    achievements: ''
-},
-skills: ['Javascript','HTML','CSS'],
-  },
-    }
+function displayName() {
+  const container = document.querySelector("#contact");
+  const createLi = document.createElement("li");
+  createLi.innerText = resume.person.name;
+  container.appendChild(createLi);
+
+  const printEmail = document.createElement("li");
+  printEmail.innerText = resume.person.email;
+  container.appendChild(printEmail);
+}
+
+function displayNumber() {
+  const container = document.querySelector("#contact");
+  const createLi = document.createElement("li");
+  createLi.innerText = resume.person.number;
+  container.appendChild(createLi);
+
+  const printSocialMedia = document.createElement("li");
+  printSocialMedia.innerText = resume.person.socialMedia;
+  container.appendChild(printSocialMedia);
+}
