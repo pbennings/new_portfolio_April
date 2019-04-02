@@ -12,7 +12,7 @@ const result = document.getElementById('result');
       email: 'paul@happnyc.com',
       number: '702-913-4907',
       social media: {
-        Instagram: 'www.instagram.com/heavyweight_nyc'
+        Instagram: 'www.instagram.com/heavyweight_nyc',
         Facebook: 'www.facebook.com/heavyweight.nyc/'
       }, 
     experience: {
