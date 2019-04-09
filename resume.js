@@ -14,7 +14,7 @@ const resume = {
       title: "Creative Director",
       lengtoftime: "2 years",
       description: {
-        achievements: ""
+        achievements: "Acting as the copywriter, graphic designer, and brand manager for start-up venture."
       }
     },
     job2: {
@@ -22,27 +22,27 @@ const resume = {
       title: "Graphic Design Intern",
       lengthoftime: "3 months",
       description: {
-        achievements: ""
+        achievements: "Contributed creative input for new campaigns and projects. Performed routine updates to various materials and files as needed."
       }
     }
   },
   projects: {
     project1: {
-      nameofproject: "",
+      nameofproject: "Victory Tastes Like Candy",
       link: "",
       screenshot: "",
       github: "",
       achievements: ""
     },
     projects2: {
-      nameofproject: "",
+      nameofproject: "Year One",
       link: "",
       screenshot: "",
       github: "",
       achievements: ""
     },
     projects3: {
-      nameofproject: "",
+      nameofproject: "Hustle",
       link: "",
       screenshot: "",
       github: "",
