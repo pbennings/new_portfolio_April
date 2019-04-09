@@ -47,5 +47,17 @@ function displayExperience() {
 
   const createTitle = document.createElement("li");
   createTitle.innerText = resume.experience.job1.title;
-  container.appendChild(printTitle);
+  container.appendChild(createTitle);
 } 
+
+const createLengthOfTime = document.createElement ("li");
+createLengthOfTime = resume.experience.job1.lengthoftime;
+container.appendChild(createLengthOfTime);
+
+const createDescription = document.createElement("h2");
+createDescription = resume.experience.job1.description.achievements;
+container.appendChild(createDescription);
+
+const createJob2 = document.createElement("li");
+createJob2 = resume.experience.job2.nameofjob;
+container.appendChild(createJob2);
